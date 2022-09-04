@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>BIKER'S </title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<title>My Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+<style>
+
+body{
+
+	
+	background:orange;
+
+	margin:0;
+
+}
+
+.menu{
+		
+	
+	width:100%;
+	
+	background-color:black;
+	
+	overflow:auto;
+
+}
+
+.menu ul{
+	
+	margin:0;
+	
+	padding:20;
+	
+	list-style:none;
+	
+	line-height:60px;
+
+}
+
+.menu li{
+	
+	float:left;
+	
+
+}
+
+.menu ul li a{
+	
+	backgroung:#00FFFF;
+		
+	text-decoration:none;
+	
+	width:300px;
+	
+	display:block;
+	
+	text-aline:center;
+	
+	color:#f2f2f2;
+	
+	font-size:18px;
+	
+	font-family:sans-serif;
+	
+	letter-spacing:0.5px;
+	
+
+
+}
+
+
+
+
+
+
+
+
+.menu{
+	
+	width:100%;
+	
+	background:blue;
+	
+	overflow:auto;
+
+	position: sticky;
+	top: 0;
+}
+
+.menu ul{
+	
+	margin:0;
+	
+	padding:20;
+	
+	list-style:none;
+	
+	line-height:60px;
+
+}
+
+.menu li{
+	
+	float:left;
+	
+
+}
+
+.menu ul li a{
+	
+	background:black;
+		
+	text-decoration:none;
+	
+	width:130px;
+	
+	display:block;
+	
+	text-aline:center;
+	
+	color:#f2f2f2;
+	
+	font-size:18px;
+	
+	font-family:sans-serif;
+	
+	letter-spacing:0.5px;
+
+
+
+}
+
+
+.navbar{
+	position: sticky;
+	top: 0;
+	z-index: 1;
+}
+
+
+.centered {
+  position: absolute;
+  top: 58%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.overlay {
+  opacity: 0.8;
+}
+h3{
+	color:white;
+}
+
+
+
+
+</style>
+
+</head>
+<body background=20.jpg>
+
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">BIKER'S STOP</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="#">Home</a></li>
+      <li><a href="reservation.html">Booking</a></li>
+      <li><a href="#About Us">About US</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="2500">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+	</ol>
+
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner">
+    <div class="item active">
+      <img src="1.jpg">
+      <div class="carousel-caption">
+        <h1 style="color:white"><b>BIKER'S STOP</b></h1>
+        <p><b>RATNAGIRI</b></p>
+      </div>
+    </div>
+
+    <div class="item">
+      <img src="welcome.jpg">
+      <div class="carousel-caption">
+       
+      </div>
+    </div>
+
+  
+  </div>
+  </div>
+<div class="container">    
+
+
+  
+
+  <div class="row">
+  
+  <a class="wallpapers__link" href="2.jpg">
+    <div class="col-sm-4">
+		<div class="panel panel-primary">
+			<div class="panel-heading">bike1</div>
+		<div class="container2">
+			<div class="panel-body">
+				<img src="2.jpg" class="img-responsive"  alt="Image" width="350" height="250"/>
+					<div class="overlay">
+						<div class="text1"></div>
+					</div>
+			</div>
+		</div>
+			<div class="panel-footer"><b> <span class="red"></span><del> </b> <center><button onclick="reservation();">BOOK NOW</button>
+			</center></div>
+		</div>
+	</div>
+	</a>
+	
+	
+	
+    <div class="col-sm-4"> 
+      <div class="panel panel-danger">
+        <div class="panel-heading">BIKE2</div>
+		<div class="container2">
+			<div class="panel-body">
+		<img src="3.jpg" class="img-responsive" alt="Image" width="250" height="150"></div>
+		<div class="overlay">
+            <div class="text1">
+			</div>
+        </div>
+	</div>
+        <div class="panel-footer"><b><span class="red"></span><del> </del></b>  <center><button onclick="reservation();" >BOOK NOW</button></center></div>
+      </div>
+    </div>
+	
+    <div class="col-sm-4"> 
+      <div class="panel panel-success">
+        <div class="panel-heading">bike3</div>
+		<div class="container2">
+			<div class="panel-body">
+		<img src="4.jpg" class="img-responsive" alt="Image" width="350" height="250"></div>
+		<div class="overlay">
+            <div class="text1"></div>
+        </div>
+	</div>
+        <div class="panel-footer"><b><span class="red"></span><del> </del></b>  <center><button onclick="reservation();">BOOK NOW</button></center></div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container">    
+
+  <div class="row">
+    <div class="col-sm-4">
+    <div class="panel panel-primary">
+        <div class="panel-heading">bike4</div>
+	<div class="container2">
+        <div class="panel-body">
+    <img src="5.jpg" class="img-responsive"  alt="Image" width="250" height="150"/>
+		<div class="overlay">
+            <div class="text1"></div>
+        </div>
+</div>
+</div>
+        <div class="panel-footer"><b> <span class="red"></span><del> </b> <center><button onclick="reservation();">BOOK NOW</button></center></div>
+      </div>
+    </div>
+    <div class="col-sm-4"> 
+      <div class="panel panel-danger">
+        <div class="panel-heading">BIKE5</div>
+		<div class="container2">
+			<div class="panel-body">
+		
+		<img src="6.jpg" class="img-responsive" alt="Image" width="350" height="250"></div>
+		<div class="overlay">
+            <div class="text1">
+			</div>
+        </div>
+	</div>
+        <div class="panel-footer"><b><span class="red"></span><del> </del></b>  <center><button onclick="reservation();">BOOK NOW</button></center></div>
+      </div>
+    </div>
+	
+    <div class="col-sm-4"> 
+      <div class="panel panel-success">
+        <div class="panel-heading">bike6</div>
+		<div class="container2">
+			<div class="panel-body">
+		<img src="7.jpg" class="img-responsive" alt="Image" width="290" height="190"></div>
+		<div class="overlay">
+            <div class="text1"></div>
+        </div>
+	</div>
+        <div class="panel-footer"><b><span class="red"></span><del> </del></b>  <center><button onclick="reservation();">BOOK NOW</button></center></div>
+      </div>
+    </div>
+  </div>
+  
+  
+  
+  
+  
+   <div class="row">
+    <div class="col-sm-4">
+    <div class="panel panel-primary">
+        <div class="panel-heading">bike7</div>
+	<div class="container2">
+        <div class="panel-body">
+    <img src="8.jpg" class="img-responsive"  alt="Image" width="250" height="150"/>
+		<div class="overlay">
+            <div class="text1"></div>
+        </div>
+</div>
+</div>
+        <div class="panel-footer"><b> <span class="red"></span><del> </b> <center><button onclick="reservation();">BOOK NOW</button></center></div>
+      </div>
+    </div>
+    <div class="col-sm-4"> 
+      <div class="panel panel-danger">
+        <div class="panel-heading">BIKE8</div>
+		<div class="container2">
+			<div class="panel-body">
+		
+		<img src="9.jpg" class="img-responsive" alt="Image" width="350" height="250"></div>
+		<div class="overlay">
+            <div class="text1">
+			</div>
+        </div>
+	</div>
+        <div class="panel-footer"><b><span class="red"></span><del> </del></b>  <center><button onclick="reservation();">BOOK NOW</button></center></div>
+      </div>
+    </div>
+	
+    <div class="col-sm-4"> 
+      <div class="panel panel-success">
+        <div class="panel-heading">bike9</div>
+		<div class="container2">
+			<div class="panel-body">
+		<img src="10.jpg" class="img-responsive" alt="Image" width="290" height="190"></div>
+		<div class="overlay">
+            <div class="text1"></div>
+        </div>
+	</div>
+        <div class="panel-footer"><b><span class="red"></span><del> </del></b>  <center><button onclick="reservation();">BOOK NOW</button></center></div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="row">
+    <div class="col-sm-4">
+    <div class="panel panel-primary">
+        <div class="panel-heading">bike10</div>
+	<div class="container2">
+        <div class="panel-body">
+    <img src="11.jpg" class="img-responsive"  alt="Image" width="350" height="250"/>
+		<div class="overlay">
+            <div class="text1"></div>
+        </div>
+</div>
+</div>
+        <div class="panel-footer"><b> <span class="red"></span><del> </b> <center><button onclick="reservation();">BOOK NOW</button></center></div>
+      </div>
+    </div>
+    <div class="col-sm-4"> 
+      <div class="panel panel-danger">
+        <div class="panel-heading">BIKE11</div>
+		<div class="container2">
+			<div class="panel-body">
+		<img src="12.jpg" class="img-responsive" alt="Image" width="250" height="150"></div>
+		<div class="overlay">
+            <div class="text1">
+			</div>
+        </div>
+	</div>
+        <div class="panel-footer"><b><span class="red"></span><del> </del></b>  <center><button onclick="reservation();">BOOK NOW</button></center></div>
+      </div>
+    </div>
+	
+    <div class="col-sm-4"> 
+      <div class="panel panel-success">
+        <div class="panel-heading">bike12</div>
+		<div class="container2">
+			<div class="panel-body">
+		<img src="13.jpg" class="img-responsive" alt="Image" width="350" height="250"></div>
+		<div class="overlay">
+            <div class="text1"></div>
+        </div>
+	</div>
+        <div class="panel-footer"><b><span class="red"></span><del> </del></b>  <center><button onclick="reservation();">BOOK NOW</button></center></div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container">    
+
+  <div class="row">
+    <div class="col-sm-4">
+    <div class="panel panel-primary">
+        <div class="panel-heading">bike13</div>
+	<div class="container2">
+        <div class="panel-body">
+    <img src="14.png" class="img-responsive"  alt="Image" width="250" height="150"/>
+		<div class="overlay">
+            <div class="text1"></div>
+        </div>
+</div>
+</div>
+        <div class="panel-footer"><b> <span class="red"></span><del> </b> <center><button onclick="reservation();">BOOK NOW</button></center></div>
+      </div>
+    </div>
+    <div class="col-sm-4"> 
+      <div class="panel panel-danger">
+        <div class="panel-heading">BIKE14</div>
+		<div class="container2">
+			<div class="panel-body">
+		
+		<img src="15.jpg" class="img-responsive" alt="Image" width="350" height="250"></div>
+		<div class="overlay">
+            <div class="text1">
+			</div>
+        </div>
+	</div>
+        <div class="panel-footer"><b><span class="red"></span><del> </del></b>  <center><button onclick="reservation();" >BOOK NOW</button></center></div>
+      </div>
+    </div>
+	
+    <div class="col-sm-4"> 
+      <div class="panel panel-success">
+        <div class="panel-heading">bike15</div>
+		<div class="container2">
+			<div class="panel-body">
+		<img src="16.jpg" class="img-responsive" alt="Image" width="290" height="190"></div>
+		<div class="overlay">
+            <div class="text1"></div>
+        </div>
+	</div>
+        <div class="panel-footer"><b><span class="red"></span><del> </del></b>  <center><button onclick="reservation();">BOOK NOW</button></center></div>
+      </div>
+    </div>
+  </div>
+  
+  
+  
+  
+  
+   <div class="row">
+    <div class="col-sm-4">
+    <div class="panel panel-primary">
+        <div class="panel-heading">bike16</div>
+	<div class="container2">
+        <div class="panel-body">
+    <img src="17.jpg" class="img-responsive"  alt="Image" width="250" height="150"/>
+		<div class="overlay">
+            <div class="text1"></div>
+        </div>
+</div>
+</div>
+        <div class="panel-footer"><b> <span class="red"></span><del> </b> <center><button onclick="reservation();">BOOK NOW</button></center></div>
+      </div>
+    </div>
+    <div class="col-sm-4"> 
+      <div class="panel panel-danger">
+        <div class="panel-heading">BIKE17</div>
+		<div class="container2">
+			<div class="panel-body">
+		
+		<img src="18.jpg" class="img-responsive" alt="Image" width="350" height="250"></div>
+		<div class="overlay">
+            <div class="text1">
+			</div>
+        </div>
+	</div>
+        <div class="panel-footer"><b><span class="red"></span><del> </del></b>  <center><button onclick="reservation();" >BOOK NOW</button></center></div>
+      </div>
+    </div>
+	
+    <div class="col-sm-4"> 
+      <div class="panel panel-success">
+        <div class="panel-heading">bike18</div>
+		<div class="container2">
+			<div class="panel-body">
+		<img src="19.jpg" class="img-responsive" alt="Image" width="290" height="190"></div>
+		<div class="overlay">
+            <div class="text1"></div>
+        </div>
+	</div>
+        <div class="panel-footer"><b><span class="red"></span><del> </del></b>  <center><button onclick="reservation();">BOOK NOW</button></center></div>
+      </div>
+    </div>
+  </div>
+
+
+
+</div>
+
+
+
+
+
+
+
+<center>
+<div class="container" id="booking">
+<h2 style="color:white">BOOKING </h2>
+</div>
+<form class="myForm" method="get" enctype="application/x-www-form-urlencoded" action="/html/codes/html_form_handler.cfm">
+
+<p>
+<h3><label >Name
+<input type="text"  name="customer_name" required >
+</label><h3> 
+</p>
+
+<p>
+<label>Phone 
+<input type="tel" name="phone_number">
+</label>
+</p>
+
+<p>
+<label>Email 
+<input type="email" name="email_address">
+</label>
+</p>
+<label>Which bike do you require?</legend>
+<p><label class="choice"> <input type="radio" name="bike" required value="with gaer"> With Gear </label></p>
+<p><label class="choice"> <input type="radio" name="bike" required value="non gaer"> Without Gear </label></p>
+
+
+<center>
+<p>
+<label>Pickup Date/Time
+<input type="datetime-local" name="pickup_time" required style="color:black">
+</label>
+</p></center>
+	
+
+
+<p><button style="color:black">Submit Booking</button></p>
+</center>
+</form>
+
+
+
+<p><a name="About Us"></a></p>
+
+<h1 style="color:orange" align="center">ABOUT US</h1>
+</head>
+<body>
+
+<center>
+<img src="16.jpg" width="100%" hight="100%">
+</center>
+<h2 style="color:white"><p align="center">My Ride is the most affordable bike rental company in India.
+ We specialize in motorcycle rental, from short-term motorbike rental to long-term hiring or leasing,
+ from bike tours to bike maintenance and service we have it all. We have a wide range of geared,
+ non-geared two wheelers and scooters for rent.
+ We aim to be become one of Indias leading bike rentals because we simplified the process and made it affordable.
+ We believe that each one of us is unique. Being unique means we all have different likes and needs.
+ So, we went out of our way to get something for everyone.
+ All you have to do is make up your mind and pick one! It doesnt matter if youre a college student,
+ a working professional or a bike enthusiast who just wants to ride around the city for the weekend,
+ pick something that suits your lifestyle and Wallet as well.
+</p></h2>
+</body>
+<a href="webpage.html">HOME</a>
+
+
+
+<a name="contact"></a></p>
+<h1 style="color:red"align="center">CONTACT</h1>
+</head>
+<center>
+<img src="cont.JPG.jpg" width="100%" hight="100%">
+<h3>Mihir Shivalkar.</h3>
+<h3>CONTACT NUMBER:<b>7378604907<b></h3>
+<h3>EMAIL ID:<b>mihirs1703@gmail.com</b></h3>
+<u style="color:white"><h3>ADDRESS:Chhatrapti nagar,Ratanagiri.</h3></u>
+<h3>PIN:415612</h3>
+</center>
+<a href="webpage.html">HOME</a>
+
+<script>
+	function reservation(){
+		var myWindow = window.open("file:///C:/Full%20Stack/Bootstrap/BOOTSTRAP_project/BOOTSTRAP_project/reservation.html", "reservation", "width=500,height=800");
+		
+	};
+</script>
+
+
+</body>
+</html>

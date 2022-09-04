@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>MY V Bike Rental</title>
+			<meta charset="utf-8" />
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+			<meta name="Bike rental" content="Booking page">
+			<!-- css -->
+			<link rel="stylesheet" type="text/css" href="reservation.css">
+			<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+				
+			<!--<iframe src="http://free.timeanddate.com/clock/i5fpvar2/n1446/tct/pct/ftb/tt0/tw0/tm1/ts1/tb4" frameborder="0" width="90" height="34" allowTransparency="true"></iframe>-->
+			<link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">	
+			</script>
+	</head>
+
+
+
+	<body>
+		<header>
+			
+			<div id="content">
+					<canvas id="sketch_grid" data-processing-sources="Sketch_for_Site.pde"></canvas>
+			</div>
+		
+		
+			
+			<a name="top"></a> 
+				
+				<ul class="topnav" id="myTopnav">
+					<li><a href="" class="closebtn" >&times;</a></li>
+					<li><a href="webpage.html" id="home"><strong>Home</strong></a></li>
+					
+				</ul>
+				
+				<a href="" class="toggle" >
+					<img src="imForSite/glyphicons-114-justify.png" alt="glyphicon menu">
+				</a>
+				
+				
+		</header>
+		
+		<section class="main">
+		
+
+			
+			<div class="container-fluid text-center">
+				<div class="col-sm-2 left">
+					<a href="#top" class="goUpButton">	
+						<p><span class="glyphicon glyphicon-menu-up"></span> </p>
+						<p><span class="glyphicon glyphicon-menu-up"></span> </p>
+					</a>	
+					
+					
+					
+				</div>
+				
+				
+				<div class="col-sm-8 text-left">
+				
+					<h3>Please fill in this form</h3>
+						
+					<div class="row selection">
+						<div class="col-sm-3 selector">
+							<!--By default, the first item in the drop-down list is selected.
+							To define a pre-selected option, add the selected attribute to 
+							the option:-->
+							<label for="bike_id">Choose a bike</label>
+							<select class="form-control" id="bike_id" name="bike" >
+								<option value="01">Kawasaki Ninja 300</option>
+								<option value="02" >Honda CBR500</option>
+								<option value="03">Honda CBR 125R</option>
+								<option value="04">Suzuki GSX600</option>
+								<option value="05">Yamaha R1</option>
+								<option value="06">Yamaha R6</option>
+								<option value="07">Yamaha YZF R125 ABS</option>
+								<option value="08">Kawasaki GTR 1400</option>
+								<option value="09">Honda MSX125</option>
+								<option value="10">Suzuki DR350</option>
+								<option value="11">Yamaha FZ S Fi</option>
+								<option value="12">Yamaha MT 125</option>
+								<option value="13">Yamaha XT1200</option>
+								<option value="14">Yamaha YBR 125</option>
+								<option value="15">Yamaha Midnight Star XVS1300A</option>
+								<option value="16">Suzuki Intruder M800Z</option>
+							</select>
+						</div>
+						
+						
+						<div class="col-sm-9 dates">
+							<div class="col-sm-4" id="pick-up-date">
+								<label for="date-input" class="col-sm-3 col-form-label">Pick up date</label>
+								<input class="form-control" type="date" value="2016-11-29" id="setDatePick" ><!--!!!!!!1поставить автомат определние дат!!!-->
+							</div>
+							
+							<div class="col-sm-1">
+							</div>
+							
+							
+							<div class="col-sm-4" id="pick-up-time">
+								<label for="time-input" class="col-sm-4 col-form-label">Time</label>
+  
+								<input class="form-control" type="time" value="13:45:00" id="setTimePick">
+  
+							</div>
+												
+						</div>	
+					</div>
+					
+					
+					
+					<div class="row selection">
+						<div class="col-sm-3" id="invisible">
+						</div>
+						
+						<div class="col-sm-9 dates">
+							<div class="col-sm-4" id="drop-off-date">
+								<label for="date-input" class="col-sm-3 col-form-label">Drop off date</label>
+								<input class="form-control" type="date" value="2016-11-29" id="setDateDrop"><!--!!!!!!1поставить автомат определние дат!!!-->
+							</div>
+							
+							<div class="col-sm-1">
+							</div>
+							
+							
+							<div class="col-sm-4" id="drop-off-time">
+								<label for="example-time-input" class="col-sm-4 col-form-label">Time</label>
+								<input class="form-control" type="time" value="13:45:00" id="setTimeDrop">
+							</div>
+							
+							
+						</div>	
+
+					</div>
+					
+					
+					<div class="row" id="pricing">
+						<div class="col-sm-9" id="invisible">
+						</div>
+						
+						<div class="col-sm-3" 	>						
+							<label class="col-sm-12"><h4>Final price</h4></label>
+							<div class="col-sm-12 price"> 
+								
+								<h4>50</h4>
+							</div>
+						</div>
+					</div>
+					
+					
+					<div class="col-sm-6 personal-details">
+					
+						<div class="row" id="FullName">
+							<label for="name" class="col-sm-12 col-form-label">Full name</label>
+							<input class="form-control" type="text"  id="name">
+						</div>
+						
+						<div class="row" id="YOB">
+							<label for="yearOfBirth" class="col-sm-12 col-form-label">Year of Birth</label>
+							<input class="form-control" type="text" value="" id="yearOfBirth">
+						</div>
+						
+						<div class="row" id="email">
+							<label for="email" class="col-sm-12 col-form-label">Email</label>
+							<input class="form-control" type="text" id="mail">
+						</div>
+						
+						<div class="row" id="phone">
+							<label for="phone" class="col-sm-12 col-form-label">Phone</label>
+							<input class="form-control" type="text" id="number">
+						</div>
+					</div>	
+					
+					<div class="col-sm-6 comment">	
+						<div class="row" id="comment">
+							<label for="message" class="col-sm-12 col-form-label" id="message"> Comments</label>
+							<div class="col-sm-12" id="messageZone">
+								<textarea class="form-control"  name="message" ></textarea>
+							</div>
+						</div>
+					</div>	
+					
+					 
+					
+					<div class="col-sm-12 checkbox">
+					
+						<input type="checkbox" id="check" name="cc" />
+						<label  for="check"><span></span><a id ="contract">I accept the conditions.</a></label>		
+					
+					
+					</div>
+					
+					
+					
+					
+					
+					
+					<div class="col-sm-12 submit">
+						<div id="sendButton">
+							<button type="submit" id="submit" onclick="yourOrder();" name="submit">Place order</button>
+						</div>
+					
+					</div>
+				</div>			
+					
+				<div class="col-sm-2">
+				</div>
+		</section>	
+		
+		
+	
+			
+			
+			
+			
+		<script>
+			function yourOrder(){
+				var a =document.getElementById("name").value;
+				var b =document.getElementById("mail").value;
+				var c =document.getElementById("number").value;
+				alert("YOUR ORDER "+"ORDER ID :2000121"+"\n"+"*****CUSTOMER INFORMATION*****"+"\n"
+				+"customer name:"+"\n"+a+"\n"+"customer email:"+"\n"+b+"\n"
+				+"customer contact number:"+"\n"+c+"\n");
+				
+			
+			};	
+		</script>
+			
+	</body>
+</html>
